@@ -50,17 +50,24 @@
         height: 200px; /* Set the height of each box */
     }
 
+	#main section.tiles {
+	    margin-top: 100; /* Add this to reduce the space before the tiles */
+	}
+
+	.tiles article {
+		margin-top:  1px;
+	    margin-bottom: 1px; /* Adjust the value as needed */
+	}
+
 </style>
 
 <div id="main">
 	<div class="inner">
 		<header>
 		<h1>Personal finance</h1>
-		
 		<p style="font-size: larger">Navigating personal finance is really, really hard! No one teaches us about this stuff as we grow up.</p>
-		<p style="font-size: larger">So I built this page out with a lot of information that I've learned since I graduated college, and these are the exact things I would do if I were to step back into the shoes of 22-year-old me.</p>
-		<p style="font-size: larger">A lot of this can seem convoluted and confusing, but I promise it isn't! </p>
-
+		<p style="font-size: larger">So I built this page out with a lot of information that I've learned since I graduated college, and these are the exact things I would do if I were to step back into the shoes of 22-year-old me. For now, it'll be mostly geared toward recent graduates starting out their careers.</p>
+		<p style="font-size: larger">A lot of this can seem convoluted and confusing on first glance, but I promise it isn't!</p>
 
 <!---------------------------CASH MGMT---------------------->
 
@@ -73,7 +80,7 @@
 			<img src="images/canvas.jpg" alt="" />
 		</span>
 		<a href="perfin/build-a-budget.html">
-        <h2 style="font-size: 25px; font-family: 'Courier', monospace;">Step 0:</h2>
+        <h2 style="font-size: 18px; font-family: 'Courier', monospace;">Step 0:</h2>
         <h2 style="font-size: 14px; font-family: 'Open Sans', sans-serif; font-style: italic;">Build a budget</h2> <div class="content">
 				<p></p>
 				<p>A template on how to budget</p>
@@ -86,7 +93,7 @@
 			<img src="images/canvas.jpg" alt="" />
 		</span>
 		<a href="perfin/open-a-hysa.html">
-        <h2 style="font-size: 25px; font-family: 'Courier', monospace;">Step 1:</h2>
+        <h2 style="font-size: 18px; font-family: 'Courier', monospace;">Step 1:</h2>
         <h2 style="font-size: 12px; font-family: 'Open Sans', sans-serif; font-style: italic;">Open a HYSA</h2> <div class="content">
 				<p></p>
 				<p>Expectations around a savings account</p>
@@ -99,7 +106,7 @@
 			<img src="images/canvas.jpg" alt="" />
 		</span>
 		<a href="perfin/emergency-fund.html">
-        <h2 style="font-size: 25px; font-family: 'Courier', monospace;">Step 2:</h2>
+        <h2 style="font-size: 18px; font-family: 'Courier', monospace;">Step 2:</h2>
         <h2 style="font-size: 12px; font-family: 'Open Sans', sans-serif; font-style: italic;">Emergency fund</h2> <div class="content">
 				<p></p>
 				<p>How to build an emergency fund</p>
@@ -112,16 +119,70 @@
 			<img src="images/canvas.jpg" alt="" />
 		</span>
 		<a href="open-a-cc.html">
-        <h2 style="font-size: 22px; font-family: 'Courier', monospace;">Step 3*:</h2>
+        <h2 style="font-size: 18px; font-family: 'Courier', monospace;">Step 3*:</h2>
         <h2 style="font-size: 12px; font-family: 'Open Sans', sans-serif; font-style: italic;">Open a credit card</h2> <div class="content">
 				<p></p>
 				<p>The benefits of a CC</p>
 		</div>
 		</a>
 		</article>
-
 		</section>
 
+<!---------------------------RETIREMENT ACCOUNTS---------------------->
+
+		<h1 style="font-size: 30px;"></h1>
+		<h1 style="font-size: 30px;">Saving for retirement</h1>
+								
+		<section class="tiles">
+		
+		<article class="style2">
+		<span class="image">
+			<img src="images/canvas.jpg" alt="" />
+		</span>
+		<a href="perfin/retirement-terminology.html">
+        <h2 style="font-size: 15px; font-family: 'Open Sans', sans-serif; font-style: italic;">Roth or Traditional? IRA or 401K?</h2> <div class="content">
+				<p></p>
+				<p>Quick overview of what these are</p>
+		</div>
+		</a>
+		</article>
+			
+		<article class="style3">
+		<span class="image">
+			<img src="images/canvas.jpg" alt="" />
+		</span>
+		<a href="perfin/retirement-what-to-invest.html">
+        <h2 style="font-size: 15px; font-family: 'Open Sans', sans-serif; font-style: italic;">What to specifically invest in</h2> <div class="content">
+				<p></p>
+				<p>A primer on TDFs</p>
+		</div>
+		</a>
+		</article>	
+							
+		<article class="style4">
+		<span class="image">
+			<img src="images/canvas.jpg" alt="" />
+		</span>
+		<a href="perfin/retirement-where-to-invest.html">
+        <h2 style="font-size: 15px; font-family: 'Open Sans', sans-serif; font-style: italic;">Brokerage recs</h2> <div class="content">
+				<p></p>
+				<p>Some are better than others</p>
+		</div>
+		</a>
+		</article>	
+
+		<article class="style5">
+		<span class="image">
+			<img src="images/canvas.jpg" alt="" />
+		</span>
+		<a href="retirement-other.html">
+        <h2 style="font-size: 15px; font-family: 'Open Sans', sans-serif; font-style: italic;">Other things you should know</h2> <div class="content">
+				<p></p>
+				<p>The benefits of a CC</p>
+		</div>
+		</a>
+		</article>
+		</section>
 
 <!---------------------------STUDENT LOANS-------------------------->
 
@@ -131,12 +192,12 @@
 
 		<section class="tiles">
 		
-		<article class="style5">
+		<article class="style3">
 		<span class="image">
 			<img src="images/canvas.jpg" alt="" />
 		</span>
 		<a href="perfin/calculate-roi.html">
-        <h2 style="font-size: 25px; font-family: 'Courier', monospace;">Step 0:</h2>
+        <h2 style="font-size: 18px; font-family: 'Courier', monospace;">Step 0:</h2>
         <h2 style="font-size: 14px; font-family: 'Open Sans', sans-serif; font-style: italic;">Calculate ROI</h2> <div class="content">
 				<p></p>
 				<p>A calculator on school's ROI</p>
@@ -144,12 +205,12 @@
 		</a>
 		</article>
 			
-		<article class="style6">
+		<article class="style4">
 		<span class="image">
 			<img src="images/canvas.jpg" alt="" />
 		</span>
 		<a href="perfin/assess-financing-options.html">
-        <h2 style="font-size: 25px; font-family: 'Courier', monospace;">Step 1:</h2>
+        <h2 style="font-size: 18px; font-family: 'Courier', monospace;">Step 1:</h2>
         <h2 style="font-size: 12px; font-family: 'Open Sans', sans-serif; font-style: italic;">Assess financing options</h2> <div class="content">
 				<p></p>
 				<p>Strategies on how to pay</p>
@@ -157,12 +218,12 @@
 		</a>
 		</article>	
 							
-		<article class="style1">
+		<article class="style5">
 		<span class="image">
 			<img src="images/canvas.jpg" alt="" />
 		</span>
 		<a href="perfin/estimate-expenses.html">
-        <h2 style="font-size: 25px; font-family: 'Courier', monospace;">Step 2:</h2>
+        <h2 style="font-size: 18px; font-family: 'Courier', monospace;">Step 2:</h2>
         <h2 style="font-size: 12px; font-family: 'Open Sans', sans-serif; font-style: italic;">Estimate expenses</h2> <div class="content">
 				<p></p>
 				<p>Build another budget</p>
@@ -170,7 +231,7 @@
 		</a>
 		</article>	
 
-		<article class="style2">
+		<article class="style6">
 		<span class="image">
 			<img src="images/canvas.jpg" alt="" />
 		</span>
