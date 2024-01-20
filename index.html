@@ -1,31 +1,16 @@
 <!DOCTYPE HTML>
 
-<html>
-    <head>
-        <title>Rutvik's portfolio</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    </head>
-    
-    <body class="is-preload">
-      
-        <!-- Wrapper -->
-        <div id="wrapper">
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Index Page</title>
+	</head>
+	<body>
 
-    <!-- Header -->
-    <header id="header">
-        <div class="inner">
+	<!-- The container where you want to load the header -->
+	<div id="headerContainer"></div>
 
-    <!-- Nav -->
-    <nav>
-    <ul>
-        <li><a href="#menu">Menu</a></li>
-    </ul>
-    </nav>
-    </div>
-    </header>
 
     <!-- Menu -->
     <nav id="menu">
@@ -129,6 +114,19 @@
 		<img alt="Clicky" src="//static.getclicky.com/media/links/badge.gif" border="0" />
 	</a>
 	<script async data-id="101420048" src="//static.getclicky.com/js"></script>
+
+<!-- Fetch and load header content -->
+<script>
+    fetch('header.html')
+        .then(response => response.text())
+        .then(headerContent => {
+            var headerContainer = document.getElementById("headerContainer");
+            headerContainer.innerHTML = headerContent;
+        })
+        .catch(error => console.error('Error fetching header:', error));
+</script>
+
+
 
 </body>
 </html>
