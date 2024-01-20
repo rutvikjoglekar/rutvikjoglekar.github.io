@@ -115,16 +115,18 @@
 	</a>
 	<script async data-id="101420048" src="//static.getclicky.com/js"></script>
 
-<!-- Fetch and load header content -->
-<script>
-    fetch('header.html')
-        .then(response => response.text())
-        .then(headerContent => {
-            var headerContainer = document.getElementById("headerContainer");
-            headerContainer.innerHTML = headerContent;
-        })
-        .catch(error => console.error('Error fetching header:', error));
-</script>
+	<link rel="stylesheet" href="common.css">
+
+	<!-- Fetch and load header content -->
+	<script>
+	    fetch('header.html')
+	        .then(response => response.text())
+	        .then(headerContent => {
+	            var headerContainer = document.getElementById("headerContainer");
+	            headerContainer.innerHTML = headerContent;
+	        })
+	        .catch(error => console.error('Error fetching header:', error));
+	</script>
 
 
 
