@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <style>
+        /* Add some basic styling if needed */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        input, button {
+            margin: 5px;
+            padding: 8px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Income Tax Calculator</h2>
+
+    <label for="income">Income:</label>
+    <input type="text" id="income" placeholder="Enter your income">
+
+    <br>
+
+    <label for="state">State:</label>
+    <select id="state">
+        <option value="none">Select State</option>
+        <!-- Add options for different states -->
+        <option value="ny">New York</option>
+        <option value="ca">California</option>
+        <!-- Add more states as needed -->
+    </select>
+
+    <br>
+
+    <button onclick="calculateTax()">Calculate Tax</button>
+
+    <br>
+
+    <div id="result"></div>
+
+    <script>
+        // JavaScript function for tax calculation
+        function calculateTax() {
+            const income = parseFloat(document.getElementById('income').value);
+            const state = document.getElementById('state').value;
+
+            if (isNaN(income) || state === 'none') {
+                document.getElementById('result').innerHTML = 'Please enter valid income and select a state.';
+                return;
+            }
+
+            // Federal tax rate (example, you need to update this based on the latest rates)
+            const federalTaxRate = 0.22;
+
+            // State tax rate (example, you need to update this based on the specific state)
+            let stateTaxRate;
+            switch(state) {
+                case 'ny':
+                    stateTaxRate = 0.06;
+                    break;
+                case 'ca':
+                    stateTaxRate = 0.09;
+                    break;
+                // Add cases for more states as needed
+                default:
+                    stateTaxRate = 0.05; // Default state tax rate
+            }
+
+            const federalTax = income * federalTaxRate;
+            const stateTax = income * stateTaxRate;
+
+            document.getElementById('result').innerHTML = `
+                <p>Federal Marginal Tax Rate: ${federalTaxRate * 100}%</p>
+                <p>State Marginal Tax Rate: ${stateTaxRate * 100}%</p>
+                <p>Federal Tax: $${federalTax.toFixed(2)}</p>
+                <p>State Tax: $${stateTax.toFixed(2)}</p>
+            `;
+        }
+    </script>
+
+</body>

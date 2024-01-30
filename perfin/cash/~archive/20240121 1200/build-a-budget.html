@@ -68,43 +68,30 @@
 		<p style="font-size: larger">Before you start doing a deep dive into the fascinating world of personal finance - everything from churning credit cards to trading options, the first step is to build a budget. At this stage, your budget doesn't have to be super complicated. But at a minimum, coming out of this exercise, you should be able to:</p>
 		<p class="numbered-section" style="font-size: larger">	1. Identify how much you spend</p>
 		<p class="numbered-section" style="font-size: larger">	2. Identify how much you make </p>
-
-
-
-
-
-
-
-
 		<p class="numbered-section" style="font-size: larger">	3. Add up how much you have saved up </p>
 		<p style="font-size: larger">I've added a downloadable template that can help you calculate some of these numbers on your own. The instructions in the workbook should be pretty clear if you want to jump ahead, but see below if you want additional details on how to think through budgeting.</p>
 		<div class="section-spacing"></div>
     	<p style="font-size: larger"><strong>Identify how much you spend</strong></p>
     	<p style="font-size: larger">Here's how much you spend</p>
     	<p style="font-size: larger"> </p>
-  
-<!------------------------------------------------------------------>   	
-<!------------------------PART II INCOME---------------------------->
-<!------------------------------------------------------------------>   
+    	<p style="font-size: larger"><strong>Identify how much you make</strong></p>
+    	<p style="font-size: larger"> </p>
+    	<p style="font-size: larger"><strong>Add up how much you have saved</strong></p>
+    	<p style="font-size: larger"> </p>
+    	<p style="font-size: larger"> </p>
 
-    <p style="font-size: larger"><strong>Identify how much you make</strong></p>
-    <p style="font-size: larger">This calculator will help you estimate how much you make on a monthly basis after tax.</p>
-    <p style="font-size: larger"> </p>
 
-<!------------------------INCOME CALCULATOR---------------------------->
-    
-    <p style="font-size: larger">Calculate after-tax income</p>
-    <script src="taxCalculatorold.js"></script>
+<!------------------------CALCULATOR---------------------------->
+	
+    <h2>Budgeting calculator</h2>
+    <script src="taxCalculator.js"></script>
 
-    </head>
-    <body>
-        
-    <label for="income">Income 1:</label>
-    <input type="text" id="income1" placeholder="Enter Income 1" style="width: 200px;">
-    <br>
+	</head>
+	<body>
+		
+    <label for="income">Income:</label>
+    <input type="text" id="income" placeholder="Enter your income" style="width: 200px;">
 
-    <label for="income">Income 2:</label>
-    <input type="text" id="income2" placeholder="Enter Income 2 (optional)" style="width: 200px;">
     <br>
 
     <label for="state">State:</label>
@@ -115,37 +102,20 @@
         <option value="ca">California</option>
         <!-- Add more states as needed -->
     </select>
-    <br>
-
-    <label for="filingstatus">Tax filing status:</label>
-    <select id="filingstatus" style="width: 200px;">
-        <option value="none">Select tax filing status</option>
-        <option value="single">Single</option>
-        <option value="mfj">Married, filing jointly</option>
-    </select>
 
     <br>
     <button onclick="calculateTax()">Calculate Tax</button>
     <br>
 
     <div id="result"></div>
-    <br>
+
     
 
 </body>
 
-<!------------------------INCOME CALCULATOR---------------------------->   
-
-
-
-    	<p style="font-size: larger"><strong>Add up how much you have saved</strong></p>
-    	<p style="font-size: larger"> </p>
-    	<p style="font-size: larger"> </p>
-
-
 <!------------------------FOOTER 20231205 2158---------------------------->
 
-    </body>
+
 	</section>
 		</div>
 		</div>	
