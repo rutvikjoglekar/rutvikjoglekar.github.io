@@ -70,11 +70,14 @@
                 stateTaxRate = 0.06;
                 break;
             case 'ca':
-                stateTaxRate = 0.09;
+                stateTaxRate = 0.06;
+                break;
+            case 'notax':
+                stateTaxRate = 0;
                 break;
                 // Add cases for more states as needed
                 default:
-                stateTaxRate = 0.05; // Default state tax rate
+                stateTaxRate = 0; // Default state tax rate
         }
 
         //const federalTax = income * federalTaxRate;
