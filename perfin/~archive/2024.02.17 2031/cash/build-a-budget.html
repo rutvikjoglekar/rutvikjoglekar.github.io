@@ -1,0 +1,256 @@
+<!-------------------HEADER 2023-12-05 2114--------------------------->
+
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>Build a Budget 101</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="../../assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+    </head>
+    
+    <body class="is-preload">
+      
+        <!-- Wrapper -->
+        <div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+        <div class="inner">
+
+    <!-- Nav -->
+    <nav>
+    <ul>
+        <li><a href="#menu">Menu</a></li>
+    </ul>
+    </nav>
+    </div>
+    </header>
+
+    <!-- Menu -->
+    <nav id="menu">
+    <h2>Menu</h2>
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../portfolio.html">Portfolio</a></li>
+        <li><a href="../photography.html">Photography</a></li>
+        <li><a href="../perfin.html">Personal finance</a></li>
+        <li><a href="https://drive.google.com/file/d/1hy4_62ehLEejYIXNgkbI3deag7FITxi3/view?usp=drive_link">Résumé</a></li>
+    <ul>
+    </nav>
+
+
+<!-------------------CONTENT 2023-12-05 2131--------------------------->
+
+<style>
+    .tiles article {
+        width: 200px; /* Set the width of each box */
+        height: 200px; /* Set the height of each box */
+    }
+    
+    .numbered-section {
+    	margin-left: 20px; /* Adjust the value as needed */
+    }
+
+	.section-spacing {
+            margin-bottom: 50px; /* Adjust the value as needed */
+    }
+
+</style>
+
+<div id="main">
+	<div class="inner">
+		<header>
+		<h1>Building a Budget 101</h1>
+		
+		<p style="font-size: larger">Before you start doing a deep dive into the fascinating world of personal finance - everything from churning credit cards to trading options, the first step is to build a budget. At this stage, your budget doesn't have to be super complicated. But at a minimum, coming out of this exercise, you should be able to:</p>
+		<p class="numbered-section" style="font-size: larger">	1. Identify how much you spend</p>
+		<p class="numbered-section" style="font-size: larger">	2. Identify how much you make</p>
+		<p class="numbered-section" style="font-size: larger">	3. See if you break even and by how much</p>
+		<p style="font-size: larger">I've added a downloadable template that can help you calculate some of these numbers on your own. The instructions in the workbook should be pretty clear - and I recommend downloading it and saving it to your personal machine - but you can also use some of the calculators below, which will walk you through the same exercise.</p>
+        <p style="font-size: larger">Download the workbook here: [link coming soon]</p>
+		<div class="section-spacing"></div>
+
+<!------------------------------------------------------------------>       
+<!------------------------PART I SPEND---------------------------->
+<!------------------------------------------------------------------>   
+
+    <p style="font-size: large"><strong>Identify how much you spend</strong></p>
+    <p style="font-size: larger">At this stage, you should identify how much you spend, separating out necessities and non-necessities. It doesn't have to be perfect - a ballpark estimate is fine. This can often be tricky and your categories below may vary, but I like to think about this as expenses that would be necessary for you to live a healthy life and allow you to work. For example, if you need a car or monthly metro pass to get to work, you should build that into your budget.</p>
+
+    <label for="income">Rent / mortgage:</label>
+    <input type="text" id="rent" placeholder="Enter your monthly rent or mortgage" style="width: 400px;">
+    <br>
+
+    <label for="income">Medical expenses:</label>
+    <input type="text" id="med" placeholder="Enter your monthly medical-related expenses" style="width: 400px;">
+    <br>
+
+    <label for="income">Grocery:</label>
+    <input type="text" id="food" placeholder="Enter your monthly grocery bill" style="width: 400px;">
+    <br>
+
+    <label for="income">Transportation:</label>
+    <input type="text" id="transport" placeholder="Enter your monthly transportation expenses" style="width: 400px;">
+    <br>
+
+    <label for="income">Debt:</label>
+    <input type="text" id="mindebt" placeholder="Enter your monthly min debt payments" style="width: 400px;">
+    <br>
+
+    <label for="income">Other necessary expenses:</label>
+    <input type="text" id="necother" placeholder="Enter other necessary expenses" style="width: 400px;">
+    <br>
+   
+    <label for="income">Savings:</label>
+    <input type="text" id="save" placeholder="Enter monthly savings goal" style="width: 400px;">
+    <br>
+    <div class="section-spacing"></div>
+
+<!------------------------------------------------------------------>   	
+<!------------------------PART II INCOME---------------------------->
+<!------------------------------------------------------------------>   
+
+    <p style="font-size: large"><strong>Identify how much you make</strong></p>
+    <p style="font-size: larger">This is the other part of the equation! In essence, you should make sure that what you're making - after tax - is enough to support your expenses. If it's not, something has to give: you either need to cut back on your spending or you need to increase your income.</p>
+
+    <p style="font-size: larger">This part of the exercise is also intentionally second. Too often, we allow our income to drive our spending; but if we do it the other way, we're less susceptible to spending our money just because we have the means. In other words, you should aim to save first and then spend instead of 'spend first, then save.'</p>
+
+<!------------------------INCOME CALCULATOR---------------------------->
+    
+    <script src="taxCalculator.js"></script>
+
+    </head>
+    <body>
+        
+    <label for="income">Income 1:</label>
+    <input type="text" id="income1" placeholder="Enter Income 1" style="width: 400px;">
+    <br>
+
+    <label for="income">Income 2:</label>
+    <input type="text" id="income2" placeholder="Enter Income 2 (optional)" style="width: 400px;">
+    <br>
+
+    <label for="state">State:</label>
+    <select id="state" style="width: 200px;">
+        <option value="none">Select State</option>
+        <option value="al">Alabama</option>
+        <option value="notax">Alaska</option>
+        <option value="az">Arizona</option>
+        <option value="ar">Arkansas</option>
+        <option value="ca">California</option>
+        <option value="co">Colorado</option>
+        <option value="ct">Connecticut</option>
+        <option value="de">Delaware</option>
+        <option value="notax">Florida</option>
+        <option value="ga">Georgia</option>
+        <option value="hi">Hawaii</option>
+        <option value="id">Idaho</option>
+        <option value="il">Illinois</option>
+        <option value="in">Indiana</option>
+        <option value="ia">Iowa</option>
+        <option value="ks">Kansas</option>
+        <option value="ky">Kentucky</option>
+        <option value="la">Louisiana</option>
+        <option value="me">Maine</option>
+        <option value="md">Maryland</option>
+        <option value="ma">Massachusetts</option>
+        <option value="mi">Michigan</option>
+        <option value="mn">Minnesota</option>
+        <option value="ms">Mississippi</option>
+        <option value="mo">Missouri</option>
+        <option value="mt">Montana</option>
+        <option value="ne">Nebraska</option>
+        <option value="notax">Nevada</option>
+        <option value="notax">New Hampshire</option>
+        <option value="nj">New Jersey</option>
+        <option value="nm">New Mexico</option>
+        <option value="ny">New York</option>
+        <option value="nc">North Carolina</option>
+        <option value="nd">North Dakota</option>
+        <option value="oh">Ohio</option>
+        <option value="ok">Oklahoma</option>
+        <option value="or">Oregon</option>
+        <option value="pa">Pennsylvania</option>
+        <option value="ri">Rhode Island</option>
+        <option value="sc">South Carolina</option>
+        <option value="notax">South Dakota</option>
+        <option value="notax">Tennessee</option>
+        <option value="notax">Texas</option>
+        <option value="ut">Utah</option>
+        <option value="vt">Vermont</option>
+        <option value="va">Virginia</option>
+        <option value="notax">Washington</option>
+        <option value="wv">West Virginia</option>
+        <option value="wi">Wisconsin</option>
+        <option value="notax">Wyoming</option>
+    </select>
+    <br>
+
+    <label for="filingstatus">Tax filing status:</label>
+    <select id="filingstatus" style="width: 200px;">
+        <option value="none">Select tax filing status</option>
+        <option value="single">Single</option>
+        <option value="mfj">Married, filing jointly</option>
+    </select>
+    <div class="section-spacing"></div>
+
+<!------------------------------------------------------------------>       
+<!------------------------PART III BREAKEVEN---------------------------->
+<!------------------------------------------------------------------>  
+
+    <p style="font-size: large"><strong>Breakeven point</strong></p>
+    <p style="font-size: larger">This is a very rudimentary calculation, but it should quickly allow you to see if your income can support your expenses. This calculator doesn't take into account pieces like tax credits you may qualify for, tax witholding that happens with your paycheck, or retirement contributions. All of those things can skew the budget on a monthly budget, especially because taxes happen once a year.</p>
+
+    <button onclick="calculateTax()">Calculate</button>
+    <br>
+    <p style="font-size: large"></p>
+    <div id="result"></div>
+    <br>
+    
+
+</body>
+
+
+
+<!------------------------FOOTER 20231205 2158---------------------------->
+
+    </body>
+	</section>
+		</div>
+		</div>	
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/rjoglekar/" class="icon brands style2 fa-linkedin"><span class="label">linkedin</span></a></li>
+									<li><a href="https://medium.com/@joglekar.rutvik" class="icon brands style2 fa-medium"><span class="label">medium</span></a></li>
+									<li><a href="joglekar.rutvik@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>Design: <a href="http://html5up.net">HTML5 UP</a>, with stylistic tweaks by yours truly.</li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+<a title="GDPR-compliant Web Analytics" href="https://clicky.com/101420048"><img alt="Clicky" src="//static.getclicky.com/media/links/badge.gif" border="0" /></a>
+<script async data-id="101420048" src="//static.getclicky.com/js"></script>
+
+	</body>
+</html>
+

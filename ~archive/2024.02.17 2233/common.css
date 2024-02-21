@@ -1,0 +1,12 @@
+/* common.css */
+body {
+    margin: 20;
+    padding: 20;
+}
+
+#wrapper {
+    margin: 0 auto;
+    max-width: 1200px; /* or your preferred max width */
+}
+
+/* Add more styles as needed */
